@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Dependencies / build artifacts (not expected here, but safe)
+node_modules/
+dist/
+build/
+
+# Local tooling
+*.swp
+*.swo

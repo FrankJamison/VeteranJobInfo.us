@@ -1,0 +1,458 @@
+/* WARNING: USE CAUTION WHEN EDITING THIS FILE */
+
+/* NOTE: THIS FILE INCLUDES 4 STAGES OF MEDIA QUERIES - SEE help.html */
+
+/* NOTE: TO EDIT COLORS - SEE style.css */
+
+/* CLASSES HERE CAN ALSO BE FOUND IN THE style.css */
+
+
+
+
+
+
+/***************
+START Media Queries #1 -  UNHIDE MENU ON RESIZE - SEE ALSO 740 WIDTH IN javascripts.js
+***************/
+@media only screen and (min-width: 1251px) and (max-width: 10000px) {
+
+
+
+    #menusub {
+        display: block !important;
+    }
+
+
+
+}
+
+/***************
+END Media Queries #1
+***************/
+
+/***************
+START Media Queries #1.5 WHEN PAGE WIDTH LESS THAN 1250 IS ACTIVE
+***************/
+@media handheld and (max-width: 1250px),
+screen and (max-device-width: 1250px),
+screen and (max-width: 1250px) {
+
+    #menusub a {
+        font-size: 13px;
+        padding: 20px 10px 20px 10px;
+    }
+
+}
+
+
+/***************
+START Media Queries #2 WHEN PAGE WIDTH LESS THAN 1040 IS ACTIVE (FOR TABLET)
+***************/
+@media handheld and (max-width: 1040px),
+screen and (max-device-width: 1040px),
+screen and (max-width: 1040px) {
+
+    /* MOBILE MENU */
+
+    #mobile-menu-icon {
+        display: block;
+    }
+
+    #menusub {
+        background-color: #647C89;
+        width: 250px;
+        padding-top: 0px;
+        display: none;
+        position: absolute;
+        top: 41px;
+        left: 0px;
+        z-index: 1050;
+        /* DROP SHADOW */
+        -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+        -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+    }
+
+    #menusub a {
+        font-size: 13px;
+        text-align: left;
+        padding: 7px 10px 7px 10px;
+        display: block;
+    }
+
+    /* SUB MENU CORNER ROUNDING - BOTTOM CORNERS */
+
+    #menusub,
+    #menusub a:last-child {
+        -moz-border-radius-topleft: 0px;
+        -moz-border-radius-topright: 0px;
+        -moz-border-radius-bottomright: 6px;
+        -moz-border-radius-bottomleft: 6px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+
+    /* MQS FONTS - NEXT LINE IS DEFAULT FONT ALL PAGES */
+
+    body,
+    div,
+    table {
+        font-size: 13px;
+    }
+
+    .logo-respond {
+        width: 100%;
+        height: auto;
+    }
+
+    #contentbox {
+        max-width: 720px;
+    }
+
+    #left-content {
+        max-width: 435px;
+    }
+
+    #sidebar-content {
+        max-width: 250px;
+    }
+
+    .floatlist {
+        width: 100%;
+    }
+
+    #menusub a {
+        font-size: 13px;
+        padding: 20px 10px 20px 10px;
+    }
+
+
+
+}
+
+/***************
+END Media Queries #2
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #3 WHEN PAGE WIDTH LESS THAN 740 IS ACTIVE
+***************/
+@media handheld and (max-width: 740px),
+screen and (max-device-width: 740px),
+screen and (max-width: 740px) {
+
+
+
+    #left-content {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    /* MQS HOME JQUERY SLIDESHOW */
+
+    .rslides_container {
+        border-width: 0px;
+    }
+
+    .homeimage-border {
+        border-width: 0px;
+    }
+
+    #sidebar-content {
+        border-left: #999999 0px solid;
+    }
+
+    .footerhide {
+        display: none;
+    }
+
+    .mobile-social {
+        display: block;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .mobile-social table {
+        margin: 0 auto;
+    }
+
+    /* MOBILE MENU */
+
+    #mobile-menu-icon {
+        display: block;
+    }
+
+    #menusub {
+        background-color: #647C89;
+        width: 250px;
+        padding-top: 0px;
+        display: none;
+        position: absolute;
+        top: 41px;
+        left: 0px;
+        z-index: 1050;
+        /* DROP SHADOW */
+        -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+        -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+    }
+
+    #menusub a {
+        font-size: 13px;
+        text-align: left;
+        padding: 7px 10px 7px 10px;
+        display: block;
+    }
+
+    /* SUB MENU CORNER ROUNDING - BOTTOM CORNERS */
+
+    #menusub,
+    #menusub a:last-child {
+        -moz-border-radius-topleft: 0px;
+        -moz-border-radius-topright: 0px;
+        -moz-border-radius-bottomright: 6px;
+        -moz-border-radius-bottomleft: 6px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    /* HEADER ICON */
+
+    .header-ico1 {
+        width: 30px;
+        height: 30px;
+        right: 3px;
+        top: 3px;
+    }
+
+    .ico1-img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+}
+
+/***************
+END Media Queries #3
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #4 -  WHEN PAGE WIDTH LESS THAN 482 IS ACTIVE
+                      CLASSES HERE CAN ALSO BE FOUND IN THE style.css
+***************/
+@media handheld and (max-width: 482px),
+screen and (max-device-width: 482px),
+screen and (max-width: 482px) {
+
+
+
+    /* MQS FONTS - NEXT LINE IS DEFAULT MOBILE FONT ALL PAGES */
+
+    body,
+    div,
+    table {
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .smalltext {
+        font-size: 12px;
+    }
+
+    .home-caption {
+        font-size: 12px;
+    }
+
+    .just {
+        text-align: left;
+    }
+
+
+
+
+    /* MQS GENERAL */
+
+    .large-splits {
+        height: 15px;
+    }
+
+    .hidemobile {
+        display: none;
+    }
+
+    .splits-xtramargin {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+
+
+
+    /* MQS PAGE & CONTENT HEIGHTS, PADDING & WIDTHS */
+
+    .pageheight {
+        min-height: 50px;
+    }
+
+    .pagebox {
+        padding: 0px 0px 0px 0px;
+    }
+
+    #contentbox {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content-pad {
+        padding: 10px 5px 10px 5px;
+    }
+
+    #contentbox-home {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content-pad-home {
+        padding: 10px 5px 10px 5px;
+    }
+
+
+
+
+    /* MQS LOGO GRAPHIC, AND TEXT */
+
+    #headerdiv {
+        padding: 8px 0px 8px 0px;
+    }
+
+    .textlogo {
+        font-size: 18px;
+    }
+
+    .header-ico1 {
+        display: none;
+    }
+
+
+
+
+    /* MQS FOOTER */
+
+    .footer-copyright {
+        font-size: 11px;
+    }
+
+
+
+
+    /* MQS SIDEBAR */
+
+    .sidebar-text {
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    .side-links a {
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    .sidebar-pad {
+        padding: 0px 0px 15px 0px;
+    }
+
+
+
+
+    /* MQS HOME JQUERY SLIDESHOW */
+
+    .rslides_container {
+        border-width: 0px;
+    }
+
+    #homeJQ>.centered-btns_nav {
+        display: block;
+    }
+
+    .centered-btns_tabs {
+        display: none;
+    }
+
+
+
+
+    /* CONTACT PAGE */
+
+    .contactform-table {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .shadeform,
+    .textarea,
+    .dropdown {
+        font-size: 12px;
+    }
+
+
+
+
+    /* STAFF PAGE */
+
+    .staff-email {
+        font-size: 12px;
+    }
+
+
+
+
+    /* LINKS PAGE */
+
+    .searchform,
+    .searchbutton {
+        font-size: 12px;
+    }
+
+
+
+
+    /* PAYMENTS PAGE */
+
+    .payform,
+    input[type=submit].payform {
+        font-size: 12px;
+        width: 110px;
+    }
+
+    .paypalbadge {
+        width: 80px;
+    }
+
+
+
+}
+
+/***************
+END Media Queries #4
+***************/

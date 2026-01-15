@@ -1,0 +1,139 @@
+/* http://responsiveslides.com v1.54 by @viljamis */
+/* ALLWEBCO DESIGN Ver 1.0 */
+
+
+
+
+/***************
+NOTE -----
+TO EDIT THE COLORS EDIT
+THE CSS FILES IN YOUR "colors" FOLDER
+***************/
+
+
+
+
+/* DEFAULTS */
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+.rslides {
+    margin: 0 auto;
+}
+
+.rslides_container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+/* START NEXT / BACK BUTTON STYLES (ARROW IMAGE IN jQuery FOLDER) */
+
+.centered-btns_nav {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 1.0;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 40px;
+    width: 16px;
+    background: transparent url("jQueryR-prev.png") no-repeat left top;
+    margin-top: -20px;
+}
+
+.centered-btns_nav:active {
+    opacity: 0.8;
+}
+
+.centered-btns_nav.next {
+    left: auto;
+    background: transparent url("jQueryR-next.png") no-repeat right top;
+    right: 0px;
+}
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+    outline: none;
+}
+
+
+
+
+/* START ROUND ACTIVE BUTTON STYLES (COLORS IN OTHER CSS) */
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+    max-width: 100%;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0px auto 0px auto;
+}
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+    margin: 0px;
+    display: inline;
+    float: none;
+    _float: left;
+    *float: left;
+}
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+    _display: block;
+    *display: none;
+    /* HIDES BUTTONS IN OLDER IE BROWSERS */
+}
+
+
+.centered-btns1_s1,
+.centered-btns1_s2,
+.centered-btns1_s3,
+.centered-btns1_s4,
+.centered-btns1_s5 {
+    color: #0064ad;
+}
